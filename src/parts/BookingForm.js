@@ -4,6 +4,8 @@ import { withRouter } from "react-router-dom";
 import propTypes from "prop-types";
 
 import Button from "elements/Button";
+//import BookingInformation from "Checkout/BookingInformation";
+
 import { InputNumber, InputDate } from "elements/Form";
 
 class BookingForm extends Component {
@@ -123,7 +125,9 @@ class BookingForm extends Component {
           hasShadow
           isPrimary
           isBlock
-          onClick={this.startBooking}
+          //onClick={this.startBooking}
+          type="link"
+          href={`/Checkout/`}
         >
           Continue to Book
         </Button>
